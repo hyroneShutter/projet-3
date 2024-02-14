@@ -9,6 +9,10 @@
     --filter-bg-color: #DEEBFF;
 }
 
+.---BORDER-NONE {
+    border: none;
+}
+
 .fa-solid {
     color: var(--main-color);
 }
@@ -55,10 +59,173 @@ a {
 }
 
 .neutral-star {
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
 }
 
-/****** Hebergements And Populaires ***********/
+
+
+
+
+
+/****** HEADER ************/
+header {
+    height: 79px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-link-header {
+    width: 10%;
+    padding: 30px 50px 30px 0px;
+    display: flex;
+    
+}
+
+.resize-website-logo {
+    height: 19px;
+}
+
+.header-button-navigation {
+    height: 35px;
+    display: flex;
+    gap: 68px;
+}
+
+.button-header {
+    height: 35px;
+    border-top: 3px solid #ffff;
+    display: flex;
+    align-items: flex-end;
+}
+
+.button-header:hover {
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
+}
+
+/*
+.button-header__left {
+    
+}
+
+.button-header__right {
+
+}
+*/
+
+
+
+
+
+/****** SEARCH AND FILTER BLOCK ************/
+.search-and-filter-block {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/*
+.search-element {
+    
+}
+
+.search-block__title {
+    
+}
+*/
+    .block-title h1 {
+        font-size: 1.375rem;
+    }
+    .block-title h2 {
+        font-size: 1rem;
+        font-weight: 100;
+    }
+
+.block-input form {
+    display: flex;
+
+}
+    .search-form-part-1-logo {
+        width: 50px;
+        height: 49px;
+        border-radius: 14px 0 0 14px;
+        background-color: #F2F2F2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .search-form-part-1-logo i {
+            color: #000;
+        }
+
+        .search-form-part-2-input-text {
+            padding-left: 10px;
+            outline: none;
+            color: #000;
+            border-top: 2px #F2F2F2 solid ;
+            border-bottom: 2px #F2F2F2 solid;
+        }
+            input::placeholder {
+                color: #000;
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+
+        .search-form-part-3-button {
+            width: 132px;
+            color: #ffff;
+            font-size: 1em;
+            font-weight: 600;
+            background-color: #0065FC;
+            border-radius: 0 14px 14px 0;
+        }
+
+.block-filter {
+    display: flex;
+    gap: 10px;
+}
+    .filter-title {
+        display: flex;
+        align-items: center;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .filter {
+        display: flex;
+        gap: 15px;
+    }
+        .filter__button {
+            height: 40px;
+            padding-inline: 19px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border: 4px #F2F2F2 solid;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+        .filter__button:hover {
+            background-color: #D9D9D9;
+        }
+
+
+.block-subtitle-information {
+    margin-bottom: 35px;
+}
+    .search-info-logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+        .search-info-logo i {
+            padding: 2px 8px;
+            border: 2px #F2F2F2 solid;
+            border-radius: 25px;
+        }
+
+/****** HEBERGEMENTS AND POPULAIRES ************/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -71,12 +238,22 @@ a {
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
+
+
+
+
+
+/****** HEBERGMENTS ************/
 .hebergements {
     width: 65%;
 }
 
-/****** Populaires ***********/
+
+
+
+
+
+/****** POPULAIRES ************/
 .populaires {
     width: 32%;
 }
@@ -124,9 +301,11 @@ a {
 
 
 
+
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
+/****** Media queries ************/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
@@ -160,6 +339,11 @@ a {
         font-size: 13px;
     }
 }
+
+
+
+
+
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
